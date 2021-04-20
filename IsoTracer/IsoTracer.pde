@@ -56,15 +56,15 @@ void draw() {
   items = new ArrayList<SceneItem>();
   
   // scene #1
-  //items.add(new SceneItem(new BoxIntersector(new AABB(new Vec3D(10, 0, 150 * sin(phase * 0.05f)), new Vec3D(20, 20, 100))), TColor.WHITE));
-  //items.add(new SceneItem(new BoxIntersector(new AABB(new Vec3D(85, 100 * sin(phase * 0.066f), 0), new Vec3D(20, 100, 20))), TColor.GREEN));
-  //items.add(new SceneItem(new SphereIntersectorReflector(new Sphere(new Vec3D(200 * sin(phase * 0.073f), -70, 50), 50)), TColor.WHITE));
-  //items.add(new SceneItem(new MeshIntersector(((TriangleMesh) new Plane(new Vec3D(0.1f, 0.1f, -40), new Vec3D(0, 0, 1)).toMesh(250)).rotateZ(QUARTER_PI)), TColor.WHITE));
-  //items.add(new SceneItem(new MeshIntersector(((TriangleMesh) new Plane(new Vec3D(0.1f, 0.1f, 0), new Vec3D(1, 0, 0)).toMesh(350))), TColor.YELLOW));
+  items.add(new SceneItem(new BoxIntersector(new AABB(new Vec3D(10, 0, 150 * sin(phase * 0.05f)), new Vec3D(20, 20, 100))), TColor.WHITE));
+  items.add(new SceneItem(new BoxIntersector(new AABB(new Vec3D(85, 100 * sin(phase * 0.066f), 0), new Vec3D(20, 100, 20))), TColor.GREEN));
+  items.add(new SceneItem(new SphereIntersectorReflector(new Sphere(new Vec3D(200 * sin(phase * 0.073f), -70, 50), 50)), TColor.WHITE));
+  items.add(new SceneItem(new MeshIntersector(((TriangleMesh) new Plane(new Vec3D(0.1f, 0.1f, -40), new Vec3D(0, 0, 1)).toMesh(250)).rotateZ(QUARTER_PI)), TColor.WHITE));
+  items.add(new SceneItem(new MeshIntersector(((TriangleMesh) new Plane(new Vec3D(0.1f, 0.1f, 0), new Vec3D(1, 0, 0)).toMesh(350))), TColor.YELLOW));
   
   // scene #2
-  items.add(new SceneItem(new MeshIntersector(((TriangleMesh) terrain.toMesh()).rotateX(HALF_PI).translate(0, 0, -100)), TColor.WHITE));
-  items.add(new SceneItem(new MeshIntersector(((TriangleMesh) new Plane(new Vec3D(0.1f, 0.1f, -100), new Vec3D(0, 0, 1)).toMesh(400)).rotateZ(QUARTER_PI)), TColor.WHITE));
+  // items.add(new SceneItem(new MeshIntersector(((TriangleMesh) terrain.toMesh()).rotateX(HALF_PI).translate(0, 0, -100)), TColor.WHITE));
+  // items.add(new SceneItem(new MeshIntersector(((TriangleMesh) new Plane(new Vec3D(0.1f, 0.1f, -100), new Vec3D(0, 0, 1)).toMesh(400)).rotateZ(QUARTER_PI)), TColor.WHITE));
 
   trace.setIntersectors(items);
   trace.clearRenderBuffer();
