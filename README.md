@@ -17,7 +17,7 @@ Tiny, isometric ambient-occlusion only raytracer written in Java &
 
 - https://flickr.com/photos/toxi/albums/72157628612793099
 - https://flickr.com/photos/toxi/albums/72157628230520643 (only partially)
-- thi.ng/raymarchcl (OpenCL based voxel renderer)
+- [thi.ng/raymarchcl](https://thi.ng/raymarchcl) (OpenCL based voxel renderer)
 
 ## License
 
